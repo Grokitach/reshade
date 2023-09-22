@@ -822,13 +822,11 @@ void reshade::runtime::draw_gui()
 
 			if (_needs_update)
 			{
-				ImGui::TextColored(COLOR_YELLOW,
-					"An update is available! Please visit https://reshade.me and install the new version (v%lu.%lu.%lu).",
-					_latest_version[0], _latest_version[1], _latest_version[2]);
+				ImGui::TextUnformatted("Keep reshade v5.7.0 (current) to not crash after graphic changes -Grok");
 			}
 			else
 			{
-				ImGui::TextUnformatted("Visit https://reshade.me for news, updates, effects and discussion.");
+				ImGui::TextUnformatted("Keep reshade v5.7.0 (current) to not crash after graphic changes -Grok");
 			}
 
 			ImGui::Spacing();
